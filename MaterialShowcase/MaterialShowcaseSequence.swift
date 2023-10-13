@@ -60,6 +60,13 @@ import Foundation
         }
         showcaseArray[currentCase].show(completion: self.increase)
     }
+
+       @objc public func cancelTour() {
+        //   let temp = showcaseArray[self.currentCase]
+        self.currentCase = showcaseArray.count+1
+        showCaseWillDismis()
+        //  temp.completeShowcase()
+    }
     
 }
 
